@@ -1,0 +1,26 @@
+.container__edit {
+  width: 360px;
+  margin-left: 50px;
+}
+
+.container__edit__list {
+  padding: 0;
+  width: 100%;
+}
+
+.container__edit__list__data {
+  display: inline-block;
+  width: 100px;
+}
+
+.container__edit__list__input {
+  width: 200px;
+}
+
+.container__buttons {
+  margin-left: 70px;
+}
+
+.container__buttons__button:not(:last-child) {
+  margin-right: 80px;
+}

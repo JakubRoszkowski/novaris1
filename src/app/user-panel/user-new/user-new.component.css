@@ -1,0 +1,16 @@
+.user__form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.user__form__key {
+  display: inline-block;
+  width: 100px;
+}
+
+.user__form__button {
+  margin-left: 195px;
+}

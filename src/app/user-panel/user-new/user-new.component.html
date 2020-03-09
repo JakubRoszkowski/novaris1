@@ -1,0 +1,15 @@
+<form [formGroup]="user" (ngSubmit)="onAddUser()" class="user__form">
+  <label>
+    <span class="user__form__key">Name:</span>
+    <input type="text" formControlName="name" class="user__form__input">
+  </label>
+  <label>
+    <span class="user__form__key">Surname:</span>
+    <input type="text" formControlName="surname" class="user__form__input">
+  </label>
+  <label>
+    <span class="user__form__key">Address:</span>
+    <input type="text" formControlName="address" class="user__form__input">
+  </label>
+  <button class="btn btn-success user__form__button" type="submit" [disabled]="!user.valid">Add User</button>
+</form>

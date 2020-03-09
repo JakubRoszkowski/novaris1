@@ -1,0 +1,23 @@
+.list {
+  margin-left: 50px;
+  width: 600px;
+  &__user {
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__element {
+      width: 100px;
+    }
+  }
+}
+
+.buttons {
+  margin-left: 85px;
+}
+
+.menu__container {
+  display: flex;
+  // align-items: center;
+  justify-content: flex-start;
+}

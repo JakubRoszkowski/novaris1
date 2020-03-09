@@ -1,0 +1,22 @@
+<div class="container__edit">
+<form [formGroup]="userForm">
+  <ul class="list group container__edit__list">
+    <li class="list-group-item">
+      <span class="container__edit__list__data">Name:</span>
+        <input type="text" formControlName="name" class="container__edit__list__input">
+    </li>
+    <li class="list-group-item">
+      <span class="container__edit__list__data">Surname:</span>
+      <input type="text" formControlName="surname" class="container__edit__list__input">
+    </li>
+    <li class="list-group-item">
+      <span class="container__edit__list__data">Address:</span>
+       <input type="text" formControlName="address" class="container__edit__list__input">
+    </li>
+  </ul>
+</form>
+</div>
+<div class="container__buttons">
+<button class="btn btn-primary container__buttons__button" (click)="onUserEdit()">Save changes</button>
+<button class="btn btn-danger container__buttons__button" (click)="onUserDelete()">Delete user</button>
+</div>

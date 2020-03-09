@@ -1,0 +1,24 @@
+<div class="buttons">
+  <button class="btn btn-secondary btn-sm" (click)="onSort('id')">Sort by ID</button>
+  <button class="btn btn-secondary btn-sm" (click)="onSort('name')" >Sort by Name</button>
+  <button class="btn btn-secondary btn-sm" (click)="onSort('surname')">Sort by Surname</button>
+  <button class="btn btn-secondary btn-sm" (click)="onSort('address')">Sort by City</button>
+</div>
+<div class="menu__container">
+  <div class="list">
+    <ul class="list-group">
+        <li *ngFor="let user of userList" class="list-group-item list__user" >
+          <span class="list__user__element">ID: {{ user._links.self.href.slice(27) }}</span>
+          <span class="list__user__element">{{ user.name }}</span>
+          <span class="list__user__element">{{ user.surname }}</span>
+          <span class="list__user__element">{{ user.address }}</span>
+          <button class="btn btn-warning btn-sm" (click)="onEditUser(user)">
+            <a>Edit User</a>
+          </button>
+        </li>
+    </ul>
+  </div>
+  <app-user-edit *ngIf="isEditing"></app-user-edit>
+</div>
+
+

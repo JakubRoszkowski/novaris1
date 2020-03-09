@@ -1,0 +1,14 @@
+.user__form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 150px;
+  &__key {
+    display: inline-block;
+    width: 100px;
+  }
+  &__button {
+    margin-left: 195px;
+  }
+}

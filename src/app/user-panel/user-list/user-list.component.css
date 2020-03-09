@@ -1,0 +1,24 @@
+.list {
+  margin-left: 50px;
+  width: 600px;
+}
+
+.list__user {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list__user__element {
+  width: 100px;
+}
+
+.buttons {
+  margin-left: 85px;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: flex-start;
+}
